@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="hello"><p>Hello peeps!, send Mail to anyone!</p></div>
+    <div class="container">
+      <form id="contact" action="/sendemail" method="post">
+        <h3>Share It!</h3>
+        <fieldset>
+          <input
+            placeholder="Your name"
+            type="text"
+            tabindex="1"
+            name="name"
+            required
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+            required
+            autofocus
+          /><label> Male</label>
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+            required
+            autofocus
+          /><label> Female</label>
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Email Address"
+            type="email"
+            tabindex="2"
+            name="email"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Phone number is optional"
+            type="tel"
+            tabindex="3"
+            name="phonenumber"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="Type something.."
+            tabindex="5"
+            name="message"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="wait, we are sending the mail"
+          >
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
